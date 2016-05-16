@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>智能小车控制平台</title>
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+     	
+    <body>
+    <center>
+      <img style="width:80%" src="http://192.168.0.1:8090/?action=stream" />
+    </center>
+    <center>
+    <br />
+    <div id="up" class="myButton control">向上</div>
+    <br />
+    <br />
+    <div  id="left" class="myButton control">向左</div>
+    <div  id="down" class="myButton control">向下</div>
+    <div  id="right" class="myButton control">向右</div>
+    </center>
+    <center>
+    <br />
+    <br />
+	<a class="myButton" href="javascript:pic()" >拍照</a>
+	</center>
+        <script type="text/javascript">
+        function test(){
+        	$.post('servlet/TestController',function(e){alert(e)});
+        }
+        $(function() {
+        /*
+            $(":button").bind("mousedown", function(event) { 
+					direction(event);
+			}); 
+			$(":button").bind("mouseup", function(event) { 
+					$.post('servlet/CarController?direction=stop',function(e){});
+			}); 
+			$(":button").bind("onmouseout", function(event) { 
+					$.post('servlet/CarController?direction=stop',function(e){});
+			}); 
+			
+			*/
+			$(".myButton.control").bind("touchstart", function(event) { 
+					direction(event);
+			}); 
+			$(".myButton.control").bind("touchend", function(event) { 
+					$.post('servlet/CarController?direction=stop',function(e){});
+			}); 
+        })
+        function direction(event){
+       		event = event || window.event; 
+			var target = event.target; //这个就是触发事件的控件
+			var direction = $(target).attr("id"); 
+        	$.post('servlet/CarController?direction='+direction,function(e){});
+        }
+        function pic(){
+        	$.post('servlet/PicController',function(e){alert(e)});
+        }
+        
+        
+        </script>
+    </body>
+</html>

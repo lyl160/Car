@@ -1,0 +1,147 @@
+#!/bin/sh
+
+###
+# #%L
+# **********************************************************************
+# ORGANIZATION  :  Pi4J
+# PROJECT       :  Pi4J :: Java Examples
+# FILENAME      :  build
+# 
+# This file is part of the Pi4J project. More information about 
+# this project can be found here:  http://www.pi4j.com/
+# **********************************************************************
+# %%
+# Copyright (C) 2012 - 2015 Pi4J
+# %%
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Lesser Public License for more details.
+#
+# You should have received a copy of the GNU General Lesser Public
+# License along with this program.  If not, see
+# <http://www.gnu.org/licenses/lgpl-3.0.html>.
+# #L%
+###
+
+
+
+cd $(dirname $(readlink -f $0))
+
+---------------------------------------------------------"
+
+# THE FOLLOWING INSTRUCTIONS WILL COMPILE ALL THE EXAMPLE PROJECTS
+[01 of 34]  BlinkGpioExample.java"
+ BlinkGpioExample.java
+
+[02 of 34]  BlinkTriggerGpioExample.java"
+ BlinkTriggerGpioExample.java
+
+[03 of 34]  ComputeModuleGpioExample.java"
+ ComputeModuleGpioExample.java
+
+[04 of 34]  ControlGpioExample.java"
+ ControlGpioExample.java
+
+[05 of 34]  CylonGpioExample.java"
+ CylonGpioExample.java
+
+[06 of 34]  DebounceGpioExample.java"
+ DebounceGpioExample.java
+
+[07 of 34]  FrequencyGpioExample.java"
+ FrequencyGpioExample.java
+
+[08 of 34]  I2CWiiMotionPlusExample.java"
+ I2CWiiMotionPlusExample.java
+
+[09 of 34]  ListenGpioExample.java"
+ ListenGpioExample.java
+
+[10 of 34]  ListenMultipleGpioExample.java"
+ ListenMultipleGpioExample.java
+
+[11 of 34]  MCP23017GpioExample.java"
+ MCP23017GpioExample.java
+
+[12 of 34]  MCP23S17GpioExample.java"
+ MCP23S17GpioExample.java
+
+[13 of 34]  MCP4725GpioExample.java"
+ MCP4725GpioExample.java
+
+[14 of 34]  MultipurposePinGpioExample.java"
+ MultipurposePinGpioExample.java
+
+[15 of 34]  OlimexGpioExample.java"
+ OlimexGpioExample.java
+
+[16 of 34]  PCF8574GpioExample.java"
+ PCF8574GpioExample.java
+
+[17 of 34]  PCA9685GpioExample.java"
+ PCA9685GpioExample.java
+
+[18 of 34]  PCA9685GpioServoExample.java"
+ PCA9685GpioServoExample.java
+
+[19 of 34]  PibrellaExample.java"
+ PibrellaExample.java
+
+[20 of 34]  PiFaceExample.java"
+ PiFaceExample.java
+
+[21 of 34]  PiFaceGpioExample.java"
+ PiFaceGpioExample.java
+
+[22 of 34]  SerialExample.java"
+ SerialExample.java
+
+[23 of 34]  ShutdownGpioExample.java"
+ ShutdownGpioExample.java
+
+[24 of 34]  SpiExample.java"
+ SpiExample.java
+
+[25 of 34]  StepperMotorGpioExample.java"
+ StepperMotorGpioExample.java
+
+[26 of 34]  SystemInfoExample.java"
+ SystemInfoExample.java
+
+[27 of 34]  TriggerGpioExample.java"
+ TriggerGpioExample.java
+
+[28 of 34]  UsageGpioExample.java"
+ UsageGpioExample.java
+
+[29 of 34]  WiringPiGpioExample.java"
+ WiringPiGpioExample.java
+
+[30 of 34]  WiringPiGpioInterruptExample.java"
+ WiringPiGpioInterruptExample.java
+
+[31 of 34]  WiringPiGpioInterruptExample2.java"
+ WiringPiGpioInterruptExample2.java
+
+[32 of 34]  WiringPiSerialExample.java"
+ WiringPiSerialExample.java
+
+[33 of 34]  WiringPiSoftPWMExample.java"
+ WiringPiSoftPWMExample.java
+
+[34 of 34]  WiringPiSPIExample.java"
+ WiringPiSPIExample.java
+
+---------------------------------------------------------"
+
+# THE FOLLOWING INSTRUCTIONS WILL EXECUTE ONE OF THE EXAMPLES
+# sudo java -classpath .:classes:/opt/pi4j/lib/'*' BlinkGpioExample
+The following command syntax can be used to execute the sample projects:"
+  sudo java -classpath .:classes:/opt/pi4j/lib/'*' BlinkGpioExample"
+---------------------------------------------------------"
