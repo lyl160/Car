@@ -8,7 +8,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-device.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-gpio-extension.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>
